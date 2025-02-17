@@ -10,6 +10,8 @@
   --tertiary-color: #f08a5d;
   --dark-color: #111010;
   --light-color: #f4f4f4;
+  --user-color: #9b8987;
+  --shadow-color: #7a4d3a;
 }
 
 body {
@@ -78,5 +80,49 @@ ul li a:hover {
 
 .home {
   display: flex;
+  justify-content: center;
   align-items: center;
+  height: 100vh;
+  background: linear-gradient(
+      90deg,
+      rgba(17, 16, 16, 0.7) 0%,
+      rgba(17, 16, 16, 0.7) 100%
+    ),
+    url("images/pexels-scottwebb-8200851.jpg") center/cover no-repeat;
+  color: var(--light-color);
+  background-size: cover;
+  background-position: center;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.content h2 {
+  font-size: 1.9rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.content p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: var(--user-color);
+  color: var(--light-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: var(--shadow-color);
 }
